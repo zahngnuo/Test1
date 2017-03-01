@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   style="@style/MatchMatch">
+    <ScrollView
+        android:id="@+id/scroller"
+        style="@style/WrapWrap"
+        android:fadingEdgeLength="5dip"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:id="@+id/tracks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            android:gravity="center"
+            android:paddingTop="29dp"
+            android:orientation="vertical" />
+
+    </ScrollView>
+
+</RelativeLayout>

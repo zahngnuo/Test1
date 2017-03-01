@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWrap.Vertical"
+    android:background="#f5f5f5">
+
+    <RadioGroup
+        android:id="@+id/id_group_layout"
+        style="@style/MatchWrap.Horizontal"
+        android:paddingTop="18dp">
+
+        <RadioButton
+            android:id="@+id/id_phone_rb"
+            style="@style/AutoMatch.Vertical"
+            android:button="@null"
+            android:checked="true"
+            android:drawablePadding="1dp"
+            android:drawableTop="@drawable/inputvip_phone_selector"
+            android:gravity="center"
+            android:text="手机号"
+            android:textColor="@drawable/inputvip_select_color"
+            android:textSize="@dimen/ssmall_text_margin" />
+
+        <RadioButton
+            android:id="@+id/id_vip_rb"
+            style="@style/AutoMatch.Vertical"
+            android:button="@null"
+            android:drawablePadding="1dp"
+            android:drawableTop="@drawable/inputvip_hui_selector"
+            android:gravity="center"
+            android:text="会员码"
+            android:textColor="@drawable/inputvip_select_color"
+            android:textSize="@dimen/ssmall_text_margin" />
+
+        <RadioButton
+            android:id="@+id/id_scanvip_rb"
+            style="@style/AutoMatch.Vertical"
+            android:button="@null"
+            android:drawablePadding="1dp"
+            android:drawableTop="@drawable/saoyisao"
+            android:gravity="center"
+            android:text="扫一扫"
+            android:textColor="@drawable/inputvip_select_color"
+            android:textSize="@dimen/ssmall_text_margin" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/dilog_vip_code"
+        style="@style/MatchWrap"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/inputdialog_edit_conner"
+        android:hint="请输入会员码"
+        android:inputType="number"
+        android:paddingBottom="9dp"
+        android:paddingLeft="11dp"
+        android:paddingTop="9dp"
+        android:textColor="@color/hit_color"
+        android:textSize="@dimen/mid_text_margin" />
+
+    <include layout="@layout/include_keyboardview" />
+</LinearLayout>

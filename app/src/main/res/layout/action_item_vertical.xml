@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWrap.Horizontal"
+    android:clickable="true"
+    android:focusable="true"
+    android:paddingBottom="17dp"
+    android:paddingLeft="19dp"
+    android:paddingRight="31dp">
+    <ImageView
+        android:id="@+id/iv_icon"
+        style="@style/WrapWrap"
+        android:layout_gravity="center_vertical"
+        />
+    <ImageView
+        android:id="@+id/iv_icon_unmessage"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:src="@drawable/unread"
+        android:visibility="invisible"
+        android:layout_gravity="center_vertical"
+        />
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/MatchMatch"
+        android:textColor="@color/tv_black"
+        android:textSize="15sp"
+        android:text="chart"
+        android:gravity="right"
+        android:paddingLeft="16dp"
+        />
+
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchWrap"
+    android:background="@drawable/background_border_bottom_gray_selector"
+    android:paddingBottom="10dp"
+    android:paddingLeft="13dp"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/id_goodsid_tv"
+        style="@style/WrapWrap"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="XX"
+        android:textColor="@color/hit_color"
+        android:textSize="@dimen/small_text_margin" />
+
+    <wmpos.test.weight.StockTextView
+        android:id="@+id/id_goodsname_st"
+        style="@style/WrapWrap"
+        android:layout_alignParentTop="true"
+        android:layout_alignTop="@id/id_goodsid_tv"
+        android:layout_marginLeft="7dp"
+        android:layout_toRightOf="@id/id_goodsid_tv"
+        app:textCenterColor="@color/tv_black"
+        app:textCenterSize="14"
+        app:textCenterTxt="xxxxxxxxxxxx"
+        app:textLeftColor="@color/tv_gray"
+        app:textLeftSize="14"
+        app:textLeftTxt="商品名:" />
+
+    <wmpos.test.weight.StockTextView
+        android:id="@+id/id_goodssku_st"
+        style="@style/WrapWrap"
+        android:layout_alignLeft="@id/id_goodsname_st"
+        android:layout_below="@id/id_goodsname_st"
+        android:layout_marginBottom="9dp"
+        android:layout_marginTop="6dp"
+        app:textCenterColor="@color/tv_black"
+        app:textCenterSize="14"
+        app:textCenterTxt="xxxxxxxxxx"
+        app:textLeftColor="@color/tv_gray"
+        app:textLeftSize="14"
+        app:textLeftTxt="SKU码:" />
+
+    <wmpos.test.weight.StockTextView
+        android:id="@+id/id_goodsbar_st"
+        style="@style/WrapWrap"
+        android:layout_alignTop="@id/id_goodssku_st"
+        android:layout_marginLeft="170dp"
+        app:textCenterColor="@color/tv_black"
+        app:textCenterSize="14"
+        app:textCenterTxt="xxxxxxxxxxxx"
+        app:textLeftColor="@color/tv_gray"
+        app:textLeftSize="14"
+        app:textLeftTxt="国条码:" />
+
+    <wmpos.test.weight.StockTextView
+        android:id="@+id/id_goodsprice_st"
+        style="@style/WrapWrap"
+        android:layout_alignLeft="@id/id_goodssku_st"
+        android:layout_below="@id/id_goodssku_st"
+        app:textCenterColor="@color/contract_yellow"
+        app:textCenterSize="14"
+        app:textCenterTxt="xxxxxx"
+        app:textLeftColor="@color/tv_gray"
+        app:textLeftSize="14"
+        app:textLeftTxt="正常价:"
+        app:textRightColor="@color/tv_gray"
+        app:textRightSize="14"
+        app:textRightTxt="元" />
+
+    <wmpos.test.weight.StockTextView
+        android:id="@+id/id_goodsvipprice_st"
+        style="@style/WrapWrap"
+        android:layout_alignLeft="@id/id_goodsbar_st"
+        android:layout_alignTop="@id/id_goodsprice_st"
+        android:layout_below="@id/id_goodsbar_st"
+        app:textCenterColor="@color/contract_yellow"
+        app:textCenterSize="14"
+        app:textCenterTxt="xxxxxx"
+        app:textLeftColor="@color/tv_gray"
+        app:textLeftSize="14"
+        app:textLeftTxt="优惠价:"
+        app:textRightColor="@color/tv_gray"
+        app:textRightSize="14"
+        app:textRightTxt="元" />
+</RelativeLayout>

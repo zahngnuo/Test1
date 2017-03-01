@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  style="@style/MatchMatch.Vertical"
+  >
+  <include layout="@layout/toolbar_normal"/>
+  <RelativeLayout
+      android:id="@+id/ll"
+     style="@style/MatchMatch"
+      >
+    <LinearLayout
+        style="@style/MatchMatch.Vertical"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/white"
+      >
+        <LinearLayout
+            android:id="@+id/vip_info_lay"
+            style="@style/MatchWrap.Horizontal"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/vip_stroke_style"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp">
+      <ImageView
+          style="@style/WrapWrap"
+          android:src="@drawable/huiyuan"
+          android:paddingRight="6dp"
+           />
+      <wmpos.test.weight.StockTextView
+          android:id="@+id/id_vipInfo_stock"
+          style="@style/MatchWrap"
+          app:textLeftTxt="姓名:"
+          app:textRightSize="14"
+          app:textLeftColor="#222222"
+          app:textCenterTxt="常疆"
+          app:textCenterColor="#222222"
+          app:textCenterSize="14"
+          app:textRightTxt="  88888888"
+          app:textRightColor="#222222"
+          ></wmpos.test.weight.StockTextView>
+        </LinearLayout>
+        <wmpos.test.weight.StockTextView
+            android:id="@+id/sum"
+            style="@style/WrapWrap"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="13dp"
+            android:orientation="vertical"
+            app:textCenterColor="@color/tv_black"
+            app:textCenterSize="28"
+            app:textCenterTxt="180.99"
+            app:textLeftColor="@color/tv_black"
+            app:textLeftSize="14"
+            app:textLeftTxt="合计:"
+            app:textRightColor="@color/tv_black"
+            app:textRightSize="14"
+            app:textRightTxt="元"
+            />
+        <RelativeLayout
+            style="@style/MatchWrap"
+            android:paddingBottom="12dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="26dp"
+            >
+         <TextView
+             android:id="@+id/text_payway"
+             style="@style/WrapWrap"
+             android:text="付款方式"
+             android:textSize="14sp"
+             android:textColor="@color/tv_black"
+             android:layout_alignParentLeft="true"
+             />
+            <TextView
+                android:id="@+id/id_payway_tv"
+                style="@style/WrapWrap"
+                android:layout_alignParentRight="true"
+                android:textSize="14sp"
+                android:textColor="@color/tv_black"
+                android:text="现金支付"
+                />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d7d7d7"
+            />
+        <RelativeLayout
+            style="@style/MatchWrap"
+            android:paddingBottom="12dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="11.5dp"
+            >
+            <TextView
+                android:id="@+id/text_date"
+                style="@style/WrapWrap"
+                android:text="付款方式"
+                android:textSize="14sp"
+                android:textColor="@color/tv_black"
+                android:layout_alignParentLeft="true"
+                />
+            <TextView
+                android:id="@+id/id_time_tv"
+                style="@style/WrapWrap"
+                android:layout_alignParentRight="true"
+                android:textSize="14sp"
+                android:textColor="@color/tv_black"
+                android:text="2016-09-23  16:34:23"
+                />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d7d7d7"
+            />
+        <RelativeLayout
+            style="@style/MatchWrap"
+            android:paddingBottom="12dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="11.5dp"
+            >
+            <TextView
+                android:id="@+id/text_serial_number"
+                style="@style/WrapWrap"
+                android:text="流水号"
+                android:textSize="14sp"
+                android:textColor="@color/tv_black"
+                android:layout_alignParentLeft="true"
+                />
+            <TextView
+                android:id="@+id/id_number_tv"
+                style="@style/WrapWrap"
+                android:layout_alignParentRight="true"
+                android:textSize="14sp"
+                android:textColor="@color/tv_black"
+                android:text="882409654092753"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            style="@style/MatchWrap"
+            android:background="@drawable/vip_stroke_style"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                style="@style/WrapWrap"
+                android:layout_alignParentLeft="true"
+                android:text="单价"
+                android:textColor="#666666"
+                android:textSize="@dimen/small_text_margin" />
+
+            <TextView
+                android:id="@+id/text"
+                style="@style/WrapWrap"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="小计"
+                android:textColor="#666666"
+                android:textSize="@dimen/small_text_margin" />
+
+            <TextView
+                style="@style/WrapWrap"
+                android:layout_marginRight="60dp"
+                android:layout_toLeftOf="@id/text"
+                android:text="数量"
+                android:textColor="#666666"
+                android:textSize="@dimen/small_text_margin" />
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/id_goods_list"
+           style="@style/MatchWrap"
+            android:layout_below="@+id/payway"
+            android:layout_weight="3"
+            />
+  </LinearLayout>
+      <LinearLayout
+          style="@style/MatchWrap.Vertical"
+          android:layout_alignParentBottom="true">
+          <RelativeLayout
+              android:id="@+id/chage_layout"
+              style="@style/MatchWrap"
+              android:background="#f5f5f5"
+              android:paddingTop="10dp"
+              android:visibility="visible">
+
+              <RelativeLayout
+                  android:id="@+id/r1"
+                  style="@style/MatchWrap"
+                  android:paddingLeft="15dp"
+                  android:paddingRight="15dp">
+
+                  <TextView
+                      android:id="@+id/text_official"
+                      style="@style/WrapWrap"
+                      android:layout_centerVertical="true"
+                      android:text="实收金额："
+                      android:textSize="@dimen/mid_text_margin" />
+
+                  <EditText
+                      android:id="@+id/edit_Paid_up"
+                      android:layout_width="260dp"
+                      android:layout_height="40dp"
+                      android:layout_centerVertical="true"
+                      android:layout_marginLeft="6dp"
+                      android:layout_toRightOf="@+id/text_official"
+                      android:background="@drawable/textview_corners_style"
+                      android:inputType="numberDecimal"
+                      android:maxLines="1"
+                      android:paddingLeft="8dp"
+                      android:textColor="@color/tv_black"
+                      android:textSize="@dimen/mid_text_margin" />
+              </RelativeLayout>
+
+              <wmpos.test.weight.StockTextView
+                  android:id="@+id/text_maLing"
+                  style="@style/WrapWrap"
+                  android:layout_alignParentLeft="true"
+                  android:layout_below="@+id/r1"
+                  android:layout_marginBottom="17dp"
+                  android:layout_marginLeft="35dp"
+                  android:layout_marginTop="16dp"
+                  app:textCenterColor="@color/tv_black"
+                  app:textCenterSize="18"
+                  app:textCenterTxt="0.00"
+                  app:textLeftColor="#666666"
+                  app:textLeftSize="15"
+                  app:textLeftTxt="抹零:"
+                  app:textRightColor="@color/tv_black"
+                  app:textRightSize="18"
+                  app:textRightTxt="元"
+                  android:orientation="vertical" />
+
+              <wmpos.test.weight.StockTextView
+                  android:id="@+id/id_text_change_st"
+                  style="@style/WrapWrap"
+                  android:layout_below="@+id/r1"
+                  android:layout_marginBottom="17dp"
+                  android:layout_marginLeft="109dp"
+                  android:layout_marginTop="16dp"
+                  android:layout_toRightOf="@+id/text_maLing"
+                  app:textCenterColor="@color/tv_black"
+                  app:textCenterSize="18"
+                  app:textCenterTxt="0.00"
+                  app:textLeftColor="#666666"
+                  app:textLeftSize="15"
+                  app:textLeftTxt="找零:"
+                  app:textRightColor="@color/tv_black"
+                  app:textRightSize="18"
+                  app:textRightTxt="元"
+                  android:orientation="vertical" />
+          </RelativeLayout>
+
+          <include layout="@layout/include_keyboardview" />
+
+          <LinearLayout
+              android:id="@+id/commitBtn"
+              style="@style/sitecommitBtn"
+              android:layout_alignParentBottom="true"
+              android:layout_alignParentLeft="true"
+              android:layout_alignParentStart="true"
+              android:background="@drawable/btn_bule_selector">
+
+              <ImageView
+                  style="@style/WrapWrap"
+                  android:layout_marginTop="1dp"
+                  android:src="@drawable/queding" />
+
+              <TextView
+                  style="@style/WrapWrap"
+                  android:layout_marginLeft="3dp"
+                  android:text="确定收款成功"
+                  android:textColor="@android:color/white"
+                  android:textSize="@dimen/xmid_text_margin" />
+          </LinearLayout>
+      </LinearLayout>
+
+  </RelativeLayout>
+</LinearLayout>

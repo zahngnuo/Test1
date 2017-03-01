@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchMatch.Vertical">
+    <include  layout="@layout/toolbar_normal"/>
+  <RelativeLayout
+      android:id="@+id/id_zarbar_layout"
+      style="@style/MatchMatch">
+      <include layout="@layout/common_zbar_view"/>
+      <LinearLayout
+          android:id="@+id/vip_info_lay"
+          style="@style/MatchWrap.Horizontal"
+          android:layout_alignParentTop="true"
+          android:background="@drawable/vip_stroke_style"
+          android:gravity="center_vertical"
+          android:paddingBottom="10dp"
+          android:paddingLeft="15dp"
+          android:paddingTop="10dp"
+          android:orientation="horizontal">
+          <ImageView
+              android:layout_width="20dp"
+              android:layout_height="20dp"
+              android:src="@drawable/person"  />
+
+          <wmpos.test.weight.StockTextView
+              android:id="@+id/edit_vip"
+              style="@style/WrapWrap"
+              android:layout_marginLeft="6dp"
+              app:textCenterColor="@color/tv_black"
+              app:textCenterSize="14"
+              app:textCenterTxt="常疆"
+              app:textLeftColor="@color/tv_black"
+              app:textLeftSize="14"
+              app:textLeftTxt="会员:"
+              app:textRightColor="@color/tv_black"
+              app:textRightSize="14"
+              app:textRightTxt="   8890987656389"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+      </LinearLayout>
+      <LinearLayout
+          android:id="@+id/id_bottom_layout"
+          style="@style/MatchWrap.Vertical"
+          android:layout_alignParentBottom="true"
+          android:layout_marginTop="50dp"
+          android:background="@android:color/white">
+
+          <RelativeLayout
+              style="@style/MatchWrap"
+              android:background="@drawable/vip_stroke_style"
+              android:paddingBottom="10dp"
+              android:paddingLeft="15dp"
+              android:paddingRight="15dp"
+              android:paddingTop="10dp">
+
+              <TextView
+                  style="@style/WrapWrap"
+                  android:layout_alignParentLeft="true"
+                  android:text="单价"
+                  android:textColor="#666666"
+                  android:textSize="@dimen/small_text_margin" />
+
+              <TextView
+                  android:id="@+id/text"
+                  style="@style/WrapWrap"
+                  android:layout_alignParentRight="true"
+                  android:gravity="center"
+                  android:text="小计"
+                  android:textColor="#666666"
+                  android:textSize="@dimen/small_text_margin" />
+
+              <TextView
+                  style="@style/WrapWrap"
+                  android:layout_marginLeft="180dp"
+                  android:layout_marginRight="60dp"
+                  android:layout_toLeftOf="@id/text"
+                  android:text="数量"
+                  android:textColor="#666666"
+                  android:textSize="@dimen/small_text_margin" />
+          </RelativeLayout>
+
+          <android.support.v7.widget.RecyclerView
+              android:id="@+id/id_goodslist_recyc"
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:layout_weight="3" />
+
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="1px"
+              android:layout_marginLeft="15dp"
+              android:layout_marginTop="10dp"
+              android:background="@color/main_divider" />
+
+          <RelativeLayout
+              android:id="@+id/rl_price"
+              style="@style/MatchWrap"
+              android:layout_below="@+id/goods_list"
+              android:gravity="right">
+
+              <wmpos.test.weight.StockTextView
+                  android:id="@+id/id_sum_st"
+                  style="@style/WrapWrap"
+                  android:layout_marginBottom="11dp"
+                  android:layout_marginRight="15dp"
+                  android:layout_marginTop="10.5dp"
+                  app:textCenterColor="@color/tv_black"
+                  app:textCenterSize="20"
+                  app:textCenterTxt="0.00"
+                  app:textLeftColor="@color/tv_black"
+                  app:textLeftSize="14"
+                  app:textLeftTxt="合计："
+                  app:textRightColor="@color/tv_black"
+                  app:textRightSize="14"
+                  app:textRightTxt="元"
+                  android:orientation="vertical" />
+
+          </RelativeLayout>
+      </LinearLayout>
+  </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchMatch.Vertical">
+
+    <include layout="@layout/toolbar_normal" />
+
+    <LinearLayout style="@style/MatchMatch.Vertical">
+
+        <RadioGroup
+            android:id="@+id/id_searchgroup_rg"
+            style="@style/MatchWrap.Horizontal"
+            android:gravity="center_vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/id_tv_text"
+                style="@style/WrapWrap"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:text="关键字："
+                android:textColor="@color/tv_gray"
+                android:textSize="@dimen/small_text_margin" />
+
+            <RadioButton
+                android:id="@+id/id_tv_goodsname"
+                style="@style/WrapWrap.SearchDealRBtn"
+                android:layout_marginLeft="4dp"
+                android:checked="true"
+                android:text="商品名" />
+
+            <RadioButton
+                android:id="@+id/id_tv_iphone"
+                style="@style/WrapWrap.SearchDealRBtn"
+                android:layout_marginLeft="10dp"
+                android:text="手机号" />
+
+            <RadioButton
+                android:id="@+id/id_tv_money"
+                style="@style/WrapWrap.SearchDealRBtn"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="金额" />
+
+            <RadioButton
+                android:id="@+id/id_tv_merchcode"
+                style="@style/WrapWrap.SearchDealRBtn"
+                android:layout_marginLeft="10dp"
+                android:text="商品码" />
+        </RadioGroup>
+
+        <RelativeLayout
+            android:id="@+id/id_inputiphone_rl"
+            style="@style/MatchWrap"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/search_corners_style">
+
+            <ImageView
+                android:id="@+id/icon"
+                style="@style/WrapWrap"
+                android:layout_centerVertical="true"
+                android:paddingBottom="9dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="1dp"
+                android:paddingTop="9dp"
+                android:src="@drawable/search03" />
+
+            <EditText
+                android:id="@+id/id_info_et"
+                style="@style/MatchWrap"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/icon"
+                android:background="@null"
+                android:hint="请输入商品名称"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="#999999" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/id_inputmoney_rl"
+            style="@style/MatchWrap.Horizontal"
+            android:layout_marginLeft="30dp"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="140dp"
+                android:layout_height="35dp"
+                android:background="@drawable/search_corners_style">
+
+                <EditText
+                    android:id="@+id/id_money_et1"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="金额"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="#999999" />
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="10dp"
+                    android:text="元" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/WrapWrap"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="至"
+                android:textColor="@color/tv_black" />
+
+            <RelativeLayout
+                android:layout_width="140dp"
+                android:layout_height="35dp"
+                android:background="@drawable/search_corners_style">
+
+                <EditText
+                    android:id="@+id/id_money_et2"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="金额"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="#999999" />
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="10dp"
+                    android:text="元" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            style="@style/MatchWrap"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="7dp"
+            android:paddingLeft="15dp"
+            android:text="日期区间："
+            android:textColor="@color/tv_gray"
+            android:textSize="@dimen/small_text_margin" />
+
+        <TextView
+            android:id="@+id/id_begin_tv"
+            style="@style/SearchDealTimerPicker" />
+
+        <TextView
+            style="@style/WrapWrap"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:text="至"
+            android:textColor="@color/tv_black"
+            android:textSize="@dimen/small_text_margin" />
+
+        <TextView
+            android:id="@+id/id_end_tv"
+            style="@style/SearchDealTimerPicker" />
+
+        <TextView
+            android:id="@+id/id_search_result_tv"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="27dp"
+            android:background="@drawable/btn_fastlogin_selector"
+            android:gravity="center"
+            android:text="搜索"
+            android:textColor="@color/login_btn_select"
+            android:textSize="@dimen/xmid_text_margin" />
+
+        <TextView
+            style="@style/MatchWrap"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="15dp"
+            android:text="快捷搜索："
+            android:textColor="@color/tv_gray"
+            android:textSize="@dimen/small_text_margin" />
+
+        <LinearLayout
+            style="@style/MatchWrap.Horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_five_single"
+                style="@style/SearchDealBtn"
+                android:text="最近5单" />
+
+            <Button
+                android:id="@+id/btn_ten_single"
+                style="@style/SearchDealBtn"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="最近10单" />
+
+            <Button
+                android:id="@+id/btn_Twenty_single"
+                style="@style/SearchDealBtn"
+                android:text="最近20单" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

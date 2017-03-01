@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWrap"
+    android:background="@android:color/white"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="8dp">
+
+    <TextView
+        android:id="@+id/id_goodsname_tv"
+        style="@style/WrapWrap"
+        android:text="日本进口棒棒的波力海苔 50g"
+        android:textColor="@color/hit_color"
+        android:textSize="@dimen/small_text_margin" />
+
+    <TextView
+        android:id="@+id/id_price_st"
+        style="@style/WrapWrap"
+        android:layout_below="@id/id_goodsname_tv"
+        android:layout_marginTop="2dp"
+        android:text="13.45元"
+        android:textColor="@color/tv_black"
+        android:textSize="@dimen/xxsmall_text_margin" />
+
+    <TextView
+        android:id="@+id/id_amount_ofmoney"
+        style="@style/WrapWrap"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/id_amount"
+        android:text="190.2"
+        android:textColor="@color/tv_black"
+        android:textSize="@dimen/xxsmall_text_margin" />
+
+    <TextView
+        android:id="@+id/id_amount"
+        style="@style/WrapWrap"
+        android:layout_alignTop="@+id/id_price_st"
+        android:layout_marginRight="60dp"
+        android:layout_toLeftOf="@id/id_amount_ofmoney"
+        android:text="12"
+        android:textColor="@color/tv_black"
+        android:textSize="@dimen/xxsmall_text_margin" />
+
+
+</RelativeLayout>

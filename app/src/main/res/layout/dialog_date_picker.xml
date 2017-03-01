@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWrap.Vertical"
+    android:background="@android:color/white">
+
+    <include layout="@layout/common_wheel_title" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+        <LinearLayout style="@style/MatchWrap.Horizontal">
+
+            <com.wumart.wmpos.widget.datepicker.WheelView
+                android:id="@+id/wheel_year"
+                style="@style/AutoWrap" />
+
+            <com.wumart.wmpos.widget.datepicker.WheelView
+                android:id="@+id/wheel_month"
+                style="@style/AutoWrap" />
+
+            <com.wumart.wmpos.widget.datepicker.WheelView
+                android:id="@+id/wheel_day"
+                style="@style/AutoWrap" />
+        </LinearLayout>
+
+        <com.wumart.wmpos.widget.SpaceView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            app:SpaceViewType="ALL" />
+    </FrameLayout>
+</LinearLayout>

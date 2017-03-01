@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:qinc="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60.5dp"
+    android:background="@drawable/shape_border_top_bottom_gray">
+  <TextView
+     android:id="@+id/id_cashimg_iv"
+      android:layout_width="40dp"
+      android:layout_height="60.5dp"
+      android:layout_alignParentLeft="true"
+      android:layout_centerVertical="true"
+      android:layout_marginBottom="1px"
+      android:layout_marginRight="16dp"
+      android:background="#fe3b2f"
+      android:gravity="center"
+      android:text="删除"
+      android:textColor="@android:color/white"
+      android:textSize="@dimen/small_text_margin"
+    />
+    <TextView
+        android:id="@+id/id_time_tv"
+        style="@style/WrapWrap"
+        android:layout_marginTop="7.5dp"
+        android:layout_toRightOf="@id/id_cashimg_iv"
+        android:ellipsize="end"
+        android:maxEms="11"
+        android:maxLines="1"
+        android:text="波力海苔 50g袋装"
+        android:textColor="@color/tv_black"
+        android:layout_marginRight="14dp"
+        android:textSize="@dimen/small_text_margin" />
+    <TextView
+        android:id="@+id/id_cashmoney_tv"
+        style="@style/WrapWrap"
+        android:layout_below="@id/id_time_tv"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@id/id_cashimg_iv"
+        android:text="23.32"
+        android:textSize="@dimen/small_text_margin" />
+
+    <TextView
+        style="@style/WrapWrap"
+        android:layout_alignTop="@id/id_cashmoney_tv"
+        android:layout_below="@id/id_time_tv"
+        android:layout_toRightOf="@id/id_cashmoney_tv"
+        android:text="元"
+        android:textSize="@dimen/small_text_margin" />
+
+    <wmpos.test.weight.NumberButton
+        android:id="@+id/number_button"
+        android:layout_width="98dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        qinc:editable="true"/>
+
+</RelativeLayout>

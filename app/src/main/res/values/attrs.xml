@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="StockTextView">
+        <attr name="textLeftTxt" format="string|reference"/>
+        <attr name="textLeftSize" format="float"/>
+        <attr name="textLeftColor" format="color|reference"/>
+        <attr name="textCenterTxt" format="string|reference"/>
+        <attr name="textCenterMin" format="dimension"/>
+        <attr name="textCenterSize" format="float"/>
+        <attr name="textCenterColor" format="color|reference"/>
+        <attr name="textCenterColorList" format="color"/>
+        <attr name="textRightTxt" format="string|reference"/>
+        <attr name="textRightSize" format="float"/>
+        <attr name="textRightColor" format="color|reference"/>
+        <attr name="leftCentPadding" format="dimension"/>
+        <attr name="textCenterWidth" format="dimension"/>
+        <attr name="textRightBold" format="boolean"/>
+        <attr name="textLeftGravityRight" format="boolean"/>
+        <attr name="textCenterGravity" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="RoundImageView">
+        <attr name="redius_y" format="dimension" />
+        <attr name="redius_x" format="dimension" />
+        <attr name="border_size" format="dimension" />
+        <attr name="border_color" format="color"></attr>
+        <attr name="type">
+            <enum name="circle" value="0" />
+            <enum name="round" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="LCountTimeView">
+        <attr name="inittext" format="string" />
+        <attr name="prefixruntext" format="string" />
+        <attr name="suffixruntext" format="string" />
+        <attr name="finishtext" format="string" />
+        <attr name="isAllowRun" format="boolean" />
+        <attr name="totaltime" format="integer" />
+        <attr name="onetime" format="integer" />
+        <attr name="timecolor" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SpaceView">
+        <attr name="SpaceViewType" format="integer">
+            <enum name="TOP" value="1" />
+            <enum name="BOTTOM" value="2" />
+            <enum name="ALL" value="3" />
+        </attr>
+        <attr name="SpaceViewColor" format="color" />
+        <attr name="SpaceViewStrokeWidth" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="ContractDetailItem">
+        <attr name="CdiLeftText" format="string" />
+        <attr name="CdiRightText" format="string" />
+        <attr name="CdiShowView" format="boolean" />
+        <attr name="CdiBgd" format="reference|color" />
+        <attr name="CdiRightSize" format="integer" />
+        <attr name="CdiRightColor" format="color|reference" />
+        <attr name="CdiLeftSize" format="integer" />
+        <attr name="CdiLeftColor" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="NumberButton">
+        <attr name="editable" format="boolean" />
+        <attr name="buttonWidth" format="dimension" />
+        <attr name="wutextWidth" format="dimension" />
+        <attr name="wutextSize" format="dimension" />
+        <attr name="wutextColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="NavigationButton">
+        <attr name="ImageSrc" format="reference" />
+        <attr name="ImageWidth" format="dimension" />
+        <attr name="ImageHeight" format="dimension" />
+        <attr name="BootomTextSize" format="float" />
+        <attr name="BootomTextColor" format="color|reference" />
+        <attr name="BootomTextTxt" format="string|reference" />
+    </declare-styleable>
+    <declare-styleable name="LikeView">
+        <!--当前数值,默认0-->
+        <attr name="number" format="integer"/>
+        <!--数字颜色,默认#888888-->
+        <attr name="textColor" format="color"/>
+        <!--图形外边颜色,默认#888888-->
+        <attr name="graphColor" format="color"/>
+        <!--当前激活时图形颜色,默认#ca5f5f-->
+        <attr name="animateColor" format="color"/>
+        <!--字体大小,决定控件高度以及图形大小,默认14sp-->
+        <attr name="textSize" format="dimension"/>
+        <!--动画时间,默认300-->
+        <attr name="animateDuration" format="integer"/>
+        <!--图形与数字间的距离,默认3dp-->
+        <attr name="distance" format="dimension"/>
+        <!--图形与数字高度的比例,默认1.3-->
+        <attr name="graphTextHeightRatio" format="float"/>
+        <!--图形外边绘制宽度,默认3dp-->
+        <attr name="graphStrokeWidth" format="dimension"/>
+        <!--数字绘制宽度,默认2dp-->
+        <attr name="textStrokeWidth" format="dimension"/>
+        <!--是否激活,默认false-->
+        <attr name="isActivated" format="boolean"/>
+        <!--是否自动测量数字修改后的宽度改变,防止更改状态时控件宽度改变,默认开启-->
+        <attr name="autoMeasureMaxWidth" format="boolean"/>
+        <!--是否不允许取消点赞,默认false-->
+        <attr name="notAllowedCancel" format="boolean"/>
+        <!--对齐方式,前三种默认垂直居中-->
+        <attr name="gravity" format="enum">
+            <!--居中-->
+            <enum name="center" value="1"/>
+            <!--左对齐-->
+            <enum name="left" value="2"/>
+            <!--右对齐-->
+            <enum name="right" value="3"/>
+            <!--开始点-->
+            <enum name="start" value="4"/>
+        </attr>
+    </declare-styleable>
+</resources>

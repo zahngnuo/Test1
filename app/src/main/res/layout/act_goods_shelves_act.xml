@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_normal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="商品:"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/id_clare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请输入商品编号"
+            android:textSize="20sp"
+            />
+
+        <ImageView
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/clear"
+            android:background="@color/white"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/commitBtn"
+        style="@style/MatchWrap"
+        android:layout_alignParentBottom="true"
+        android:background="@color/text_color_btn"
+        android:text="确认"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        />
+</RelativeLayout>

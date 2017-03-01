@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchMatch.Vertical"
+    >
+<include  layout="@layout/toolbar_normal"/>
+    <TextView
+          android:id="@+id/is_update_dt"
+        style="@style/MatchWrap"
+        android:background="@drawable/shape_border_bottom_gray"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="5.5dp"
+        android:text="更新时间。。。"
+        android:textColor="@color/tv_gray"
+        android:textSize="@dimen/small_text_margin"
+       />
+    <RelativeLayout
+      style="@style/MatchMatch">
+    <android.support.v7.widget.RecyclerView
+       style="@style/MatchMatch"
+       android:id="@+id/id_goodsList_recyc"
+       android:layout_alignParentTop="true"
+        />
+        <LinearLayout
+          android:id="@+id/id_upload_btn"
+          style="@style/sitecommitBtn"
+          android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/btn_bule_selector"
+            >
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/gengxin"
+                android:gravity="center"
+                />
+            <TextView
+                style="@style/WrapWrap"
+                android:text="更新商品列表"
+                android:gravity="center"
+                android:layout_marginLeft="3dp"
+                android:textColor="#ffffff"
+                />
+        </LinearLayout>
+
+</RelativeLayout>
+
+</LinearLayout>

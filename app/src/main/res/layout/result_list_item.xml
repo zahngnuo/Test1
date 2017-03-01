@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/background_border_bottom_gray_selector"
+    android:paddingLeft="14dp"
+    android:paddingRight="15dp">
+
+    <ImageView
+        android:id="@+id/id_iv_cashimg"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/weixin" />
+
+    <LinearLayout
+        android:id="@+id/layout_time"
+        style="@style/WrapWrap.Vertical"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="11dp"
+        android:layout_toRightOf="@id/id_iv_cashimg">
+
+        <TextView
+            android:id="@+id/text_payway"
+            style="@style/WrapWrap"
+            android:text="微信支付"
+            android:textColor="@color/tv_black"
+            android:textSize="@dimen/small_text_margin" />
+
+        <TextView
+            android:id="@+id/id_tv_time"
+            style="@style/WrapWrap"
+            android:layout_marginTop="4dp"
+            android:text="2016-09-25 10:23:22"
+            android:textColor="@color/main_func"
+            android:textSize="@dimen/small_text_margin" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/id_iv_goto"
+        style="@style/WrapWrap"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"
+        android:src="@drawable/btn_go" />
+
+    <TextView
+        android:id="@+id/id_tv_cashmoney"
+        style="@style/WrapWrap"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="6dp"
+        android:layout_toLeftOf="@id/id_iv_goto"
+        android:text="23.32元"
+        android:textColor="@color/tv_black"
+        android:textSize="@dimen/xmid_text_margin" />
+
+    <ImageView
+        android:id="@+id/id_tv_cashstyle"
+        style="@style/WrapWrap"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="79dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/chexiao"
+        android:visibility="gone" />
+
+</RelativeLayout>

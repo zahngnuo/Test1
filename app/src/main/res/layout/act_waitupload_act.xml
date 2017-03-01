@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchMatch.Vertical">
+
+    <include layout="@layout/toolbar_normal" />
+
+    <RelativeLayout style="@style/MatchMatch">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyc_upload"
+            style="@style/MatchMatch"
+            android:layout_alignParentTop="true"
+            />
+        <LinearLayout
+            android:id="@+id/ll_upload"
+            style="@style/sitecommitBtn"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/btn_bule_selector"
+            >
+            <ImageView
+                style="@style/WrapWrap"
+                android:layout_marginTop="1dp"
+                android:src="@drawable/group" />
+            <TextView
+                android:id="@+id/tv_upload"
+                style="@style/WrapWrap"
+                android:layout_marginLeft="3dp"
+                android:text="上传交易数据"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/xmid_text_margin" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

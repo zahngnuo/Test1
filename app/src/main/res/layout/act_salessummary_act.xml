@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  style="@style/MatchMatch.Vertical"
+    >
+    <include  layout="@layout/toolbar_normal"/>
+    <RelativeLayout
+        android:id="@+id/id_inputiphone_rl"
+        style="@style/MatchWrap"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/search_corners_style">
+
+        <ImageView
+            android:id="@+id/icon"
+            style="@style/WrapWrap"
+            android:layout_centerVertical="true"
+            android:paddingBottom="9dp"
+            android:paddingLeft="7dp"
+            android:paddingRight="1dp"
+            android:paddingTop="9dp"
+            android:src="@drawable/search03" />
+
+        <EditText
+            android:id="@+id/id_info_et"
+            style="@style/MatchWrap"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/icon"
+            android:background="@null"
+            android:hint="请输入商品名称"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="#999999" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/is_update_dt"
+        style="@style/MatchWrap"
+        android:background="@drawable/shape_border_bottom_gray"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="5.5dp"
+        android:text="更新时间。。。"
+        android:textColor="@color/tv_gray"
+        android:textSize="@dimen/small_text_margin"
+        />
+    <android.support.v7.widget.RecyclerView
+        style="@style/MatchMatch"
+        android:id="@+id/id_goodsList_recyc"
+        android:layout_alignParentTop="true"/>
+
+</LinearLayout>

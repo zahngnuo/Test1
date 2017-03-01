@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_normal" />
+
+    <Button
+        android:id="@+id/BaseNotification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BaseNotification" />
+    <Button
+        android:id="@+id/UpdateBaseNotification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UpdateBaseNotification" />
+    <Button
+        android:id="@+id/ClearBaseNotification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ClearBaseNotification" />
+    <Button
+        android:id="@+id/MediaNotification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MediaNotification" />
+
+    <Button
+        android:id="@+id/ClearALL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ClearALL" />
+    <Button
+        android:id="@+id/CustomNotification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CustomNotification" />
+    <Button
+        android:id="@+id/ClearMediaNotification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ClearMediaNotification" />
+</LinearLayout>

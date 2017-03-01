@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">自定义组件</string>
+    <string name="description">微信6.3.25抢红包插件,可以在对话内强红包,可开启关闭本功能,默认关闭</string>
+    <string name="label">微信6.3.25版自动抢红包</string>
+    <string name="qv_add">+</string>
+    <string name="qv_remove">-</string>
+    <string name="menu_name">菜单</string>
+    <string name="dish_name">菜名</string>
+    <string name="drawer_open">打开</string>
+    <string name="drawer_close">关闭</string>
+
+    <array name="planets_array">
+        <item  name="item">新闻</item>
+        <item  name="item">军事</item>
+        <item  name="item">视频</item>
+        <item  name="item">娱乐</item>
+        <item  name="item">购物</item>
+        <item  name="item">科技</item>
+    </array>
+</resources>

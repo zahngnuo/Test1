@@ -1,0 +1,21 @@
+<cn.bingoogolapple.refreshlayout.BGARefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/common_recyclerview_refresh"
+    style="@style/MatchMatch">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/main_content"
+        style="@style/MatchMatch"
+        android:background="@color/main_bg">
+        <include  layout="@layout/toolbar_normal"></include>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@id/common_recyclerview"
+            style="@style/MatchMatch"
+            android:layout_marginTop="50dp"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    </android.support.design.widget.CoordinatorLayout>
+</cn.bingoogolapple.refreshlayout.BGARefreshLayout>

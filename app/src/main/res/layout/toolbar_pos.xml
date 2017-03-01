@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar style="@style/PosToolbarStyle">
+        <RelativeLayout style="@style/ToolbarRelat">
+            <TextView style="@style/MatchWrap.PosToolbarTitle" />
+            <RelativeLayout
+                style="@style/WrapWrap.ToolbarMore"
+                android:layout_width="30dp">
+
+                <ImageView
+                    android:id="@+id/id_unread_iv"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/unread" />
+                <ImageView
+                    android:id="@+id/id_more_iv"
+                    style="@style/WrapWrap"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="3dp"
+                    android:src="@drawable/more" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+</merge>
